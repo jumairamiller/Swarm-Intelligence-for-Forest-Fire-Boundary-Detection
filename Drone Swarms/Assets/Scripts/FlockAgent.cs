@@ -45,7 +45,7 @@ public class FlockAgent : MonoBehaviour
         
         /*
          * move to new position;
-         * Time.deltaTime ensures wee have constant movement regardless of Framerate;
+         * Time.deltaTime ensures we have constant movement regardless of Framerate;
          * Cast newPosition to Vector3 to avoid errors
          * because transform.position expects Vector 3 and newPosition is a Vector2 object
          */
@@ -56,8 +56,10 @@ public class FlockAgent : MonoBehaviour
     // method to take in an angle (in degrees) and return direction of the angleInDegrees
     public Vector2 DirectionFromAngle(float angleInDegrees, bool angleIsGlobal)
     {
+        angleInDegrees += 180;
         if (!angleIsGlobal)
         {
+            //use z rotation because we are in 2D
             angleInDegrees += transform.eulerAngles.z;
         }
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), -Mathf.Cos(angleInDegrees * Mathf.Deg2Rad), 0);
