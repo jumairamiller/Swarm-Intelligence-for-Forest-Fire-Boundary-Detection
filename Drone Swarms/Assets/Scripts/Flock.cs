@@ -59,6 +59,7 @@ public class Flock : MonoBehaviour
                 transform 
                 );
             newAgent.name = "Boid " + i;
+            
             flock.Add(newAgent);
         }
     }

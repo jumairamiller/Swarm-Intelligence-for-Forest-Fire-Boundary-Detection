@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 849576165417618537}
   - component: {fileID: 3800300611929170404}
   m_Layer: 0
-  m_Name: Flock Agent
+  m_Name: flockAgent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,6 +61,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd6c1a0b6693b4e148480fed7a963084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  viewRadius: 5
+  viewAngle: 41
 --- !u!1 &6072883316355912086
 GameObject:
   m_ObjectHideFlags: 0

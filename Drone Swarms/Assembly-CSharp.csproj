@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\Behaviour Scripts\KeepWithinRadiusBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\SteeredCohesionBehaviour.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\CompositeBehaviourEditor.cs" />
+    <Compile Include="Assets\Scripts\Editor Scripts\FieldOfViewEditor.cs" />
     <Compile Include="Assets\Scripts\Filter Scripts\PhysicsLayerFilter.cs" />
     <Compile Include="Assets\Scripts\FilteredFlockBehaviour.cs" />
     <Compile Include="Assets\Scripts\Flock.cs" />
