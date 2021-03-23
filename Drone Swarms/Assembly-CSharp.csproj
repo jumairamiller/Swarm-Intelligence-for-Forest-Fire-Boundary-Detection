@@ -61,10 +61,14 @@
     <Compile Include="Assets\Scripts\Behaviour Scripts\AvoidanceBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\CohesionBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\CompositeBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Behaviour Scripts\HeatTrackBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\KeepWithinRadiusBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Behaviour Scripts\SightedTrackBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\SteeredCohesionBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Behaviour Scripts\StopAtDistBehaviour.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\CompositeBehaviourEditor.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\FieldOfViewEditor.cs" />
+    <Compile Include="Assets\Scripts\FieldOfView.cs" />
     <Compile Include="Assets\Scripts\Filter Scripts\PhysicsLayerFilter.cs" />
     <Compile Include="Assets\Scripts\FilteredFlockBehaviour.cs" />
     <Compile Include="Assets\Scripts\Flock.cs" />

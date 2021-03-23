@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 /*
@@ -27,9 +28,9 @@ public class Flock : MonoBehaviour
     [Range(1f, 100f)] public float forceFactor = 25f;
     [Range(1f, 100f)] public float maxSpeed = 5f;
     [Range(1f, 10f)] public float neighbourRadius = 5f;
-    [Range(0f, 1f)] public float personalRadius = 0.8f; 
-    
-    
+    [Range(0f, 1f)] public float personalRadius = 0.8f;
+    [Range(5f, 15f)]public float heatSensorRadius = 5f;
+
     /*
      * We're not going to set these variables but we'll use them as a utility variable based on the
      * movement variables (from above);
@@ -105,4 +106,5 @@ public class Flock : MonoBehaviour
 
         return surroundings;
     }
+    
 }

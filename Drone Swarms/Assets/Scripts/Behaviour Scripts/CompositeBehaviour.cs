@@ -31,7 +31,7 @@ public class CompositeBehaviour : FlockBehaviour
             if (partialMove != Vector2.zero)
             {
                 if (partialMove.sqrMagnitude > weights[i] * weights[i]) 
-                {
+                {   
                     partialMove.Normalize();
                     partialMove *= weights[i];
                 }
