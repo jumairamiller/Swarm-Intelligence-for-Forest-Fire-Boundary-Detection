@@ -10,7 +10,7 @@ public class PhysicsLayerFilter : SurroundingsFilter
         List<Transform> filtered = new List<Transform>();
         foreach (Transform item in original)
         {
-            // if the value of the layer mask is on the same layer as the Transform item, add it to the filterest list
+            // if the value of the layer mask is on the same layer as the Transform item, add it to the filtered list
             if (mask == (mask | (1 << item.gameObject.layer))) // left side of the or-statement converts the item's layer into a layermask
             {
                 filtered.Add(item);

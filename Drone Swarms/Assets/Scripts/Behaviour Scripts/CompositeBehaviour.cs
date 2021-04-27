@@ -25,6 +25,11 @@ public class CompositeBehaviour : FlockBehaviour
         //iterate through behaviours using for instead of foreach because we need to refer to the same index of data
         for (int i = 0; i < behaviours.Length; i++)
         {
+            if (agent.callStop)
+            {
+                return Vector2.zero;
+            }
+            
             Vector2 partialMove = behaviours[i].CalculateMove(agent, surroundings, flock) * weights[i];
             
             //confirm the partial move is limited to extent of weight
@@ -40,6 +45,7 @@ public class CompositeBehaviour : FlockBehaviour
             }
         }
 
+        
         return move;
     }
 }
