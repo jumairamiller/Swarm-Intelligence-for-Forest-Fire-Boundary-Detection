@@ -63,9 +63,8 @@
     <Compile Include="Assets\Scripts\Behaviour Scripts\CompositeBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\HeatTrackBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\KeepWithinRadiusBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Behaviour Scripts\SightedTrackBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Behaviour Scripts\SightTrackBehaviour.cs" />
     <Compile Include="Assets\Scripts\Behaviour Scripts\SteeredCohesionBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Behaviour Scripts\StopAtDistBehaviour.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\CompositeBehaviourEditor.cs" />
     <Compile Include="Assets\Scripts\Editor Scripts\FieldOfViewEditor.cs" />
     <Compile Include="Assets\Scripts\FieldOfView.cs" />

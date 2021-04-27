@@ -4,10 +4,10 @@ using UnityEngine;
 
 //Because its a scriptable object, we need a way to create it:
 [CreateAssetMenu(menuName = "Flock/Behaviour/Steered Cohesion")]
-public class SteeredCohesionBehaviour : FilteredFlockBehaviour // only differs from CohesionBehaviour by 3 lines (lines 9,10, and 35)
+public class SteeredCohesionBehaviour : FilteredFlockBehaviour 
 {
     Vector2 currentVelocity;
-    public float agentSmoothTime = 0.5f; // how long it should take for an agent to get from its current state to its next state; currently set to half a second
+    public float agentSmoothTime = 0.5f; // time taken for an agent to get from its current state to its next state - half a second
     
     /*
      * find the new position of an agent based on cohesion behaviour
@@ -32,7 +32,6 @@ public class SteeredCohesionBehaviour : FilteredFlockBehaviour // only differs f
         cohesionMove -= (Vector2)agent.transform.position; // offset from agents position
         
         // smooth the flickering motion of;
-        // parameters are: current velocity, target velocity, current velocity (passed in as a reference), time taken to transition between current and target velocity
         cohesionMove = Vector2.SmoothDamp(agent.transform.up, cohesionMove, ref currentVelocity, agentSmoothTime); 
         return cohesionMove;
     }

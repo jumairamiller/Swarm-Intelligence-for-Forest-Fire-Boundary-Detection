@@ -15,5 +15,6 @@ public abstract class FlockBehaviour : ScriptableObject
         - IS THE CONTEXT THE LOCAL SPACE???
     - the flock as a whole 
     */
+    public bool callStop; 
     public abstract Vector2 CalculateMove(FlockAgent agent, List<Transform> surroundings, Flock flock);
 }

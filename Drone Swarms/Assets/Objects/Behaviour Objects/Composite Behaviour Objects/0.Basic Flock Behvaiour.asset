@@ -12,11 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a982b3946c7fd4abeada1feeea1203fb, type: 3}
   m_Name: 0.Basic Flock Behvaiour
   m_EditorClassIdentifier: 
+  callStop: 0
   behaviours:
   - {fileID: 11400000, guid: 65b0d8af1e04c4d94a616b2191d6a1aa, type: 2}
   - {fileID: 11400000, guid: f434561427a2a4c15b14bc6efac08a8a, type: 2}
   - {fileID: 11400000, guid: e56c4b187fca84075b1e8e44e9982ffc, type: 2}
+  - {fileID: 11400000, guid: ee2bef2d88bf647bcbe1f7685e914210, type: 2}
   weights:
   - 4
   - 2
+  - 1
   - 1

@@ -12,11 +12,13 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))] 
 public class FlockAgent : MonoBehaviour
 {
-    Collider2D _agentCollider;
+    public bool callStop = false;
+    
 
     // Access the collider without ever being able to assign to it (after starting it up in Start())
+    Collider2D _agentCollider;
     public Collider2D AgentCollider
-    {
+    { 
         get { return _agentCollider; }
         set => _agentCollider = value;
     }
@@ -44,7 +46,8 @@ public class FlockAgent : MonoBehaviour
          * Cast newPosition to Vector3 to avoid errors
          * because transform.position expects Vector 3 and newPosition is a Vector2 object
          */
-        transform.position += (Vector3)newPosition * Time.deltaTime; 
+        transform.position += (Vector3)newPosition * Time.deltaTime;
+
     }
     
 }
