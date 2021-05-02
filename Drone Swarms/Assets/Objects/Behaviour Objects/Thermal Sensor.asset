@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fc8ed7b9c2f04a8bb2334a8a384b7e2, type: 3}
+  m_Name: Thermal Sensor
+  m_EditorClassIdentifier: 
+  callStop: 0
+  filter: {fileID: 11400000, guid: 5f77c460dbb2f464a9f67edab6ab92c5, type: 2}
