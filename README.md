@@ -1,14 +1,9 @@
-# Final-Year-Project-Implementation
+# Swarm Intelligence for Forest Fire Boundary Detection
 
 ## Background:
 
-This was my final year project in
-
-
-
-
-
-
+This was my final year project. I Implemented a novel swarm AI behaviour algorithm based on the flocking algorithm.
+The AI identifies the boundary of a forest fire and then forms a boundary of swarm agents around forest fire models.
 
 ## How To Run:
 
@@ -19,7 +14,6 @@ You will need to install the following:
   - Select Unity Development in the Install Selection to install the Add-on.
 - When running the Simulation open the Drone Swarms folder to run the project.
   -  For windows users a dialog will appear asking to use windows Standalone. Please say yes.    
-
 
 
 ### Visuals
